@@ -1,5 +1,6 @@
 var app = require('./config/server');
 
-app.listen(3000, function () {
+var porta = process.env.PORT || 3000;
+app.listen(porta, function () {
     console.log('Servidor rodando')
 });
